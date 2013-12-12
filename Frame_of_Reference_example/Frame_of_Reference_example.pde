@@ -71,7 +71,7 @@ void setup() {
     N.normalize();
     T.normalize();
     PVector B = N.cross(T);
-    B.normalize();
+    B.normalize(); // not really needed
 
     // build matrix with frame and translation (to centroid of each triangle)
     Mat4 m4 = new Mat4(N, T, B, p[i].c);
