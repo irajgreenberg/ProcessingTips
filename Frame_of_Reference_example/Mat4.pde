@@ -1,4 +1,4 @@
-// uber simple Homogeous 4 x 4 matrix
+// uber simple Homogeneous 4 x 4 matrix
 class Mat4 {
   float[] mat = new float[16];
   
