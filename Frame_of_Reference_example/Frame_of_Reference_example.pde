@@ -51,7 +51,7 @@ void setup() {
     // We add the extra row in the matrix and the 1 to each vector 
     // so the math works. We describe the Matrix as 4 rows by 4 columns
     // and the vector now as a Matrix with 4 rows and 1 column. 
-    // When you multiply matrices the inner numbers MUST to match, so: 
+    // When you multiply matrices the inner numbers MUST match, so: 
     // [4 x 4] [4 x 1] is OK, but [4 x 4] [1 x 4] is NOT COOL.
     
     // (Please note there is also row vector approach that you can
