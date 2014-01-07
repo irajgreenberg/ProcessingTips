@@ -1,4 +1,4 @@
-int faceCount = 100;
+int faceCount = 50;
 Plane[] p = new Plane[faceCount];
 Cylinder[] c = new Cylinder[faceCount];
 
@@ -6,7 +6,7 @@ void setup() {
   size(800, 800, P3D);
   for (int i=0; i<faceCount; ++i) {
 
-    // calc some radom triangles in 3 space
+    // calc some random triangles in 3 space
     PVector val = new PVector(random(-width/2, width/2), random(-width/2, width/2), random(-width/2, width/2));
     PVector v0 = new PVector(random(-val.x, -val.x+100), random(-val.y, -val.y+100), random(-val.z, -val.z+100));
     PVector v1 = new PVector(random(-val.x, -val.x+100), random(-val.y, -val.y+100), random(-val.z, -val.z+100));
@@ -87,9 +87,9 @@ void draw() {
   background(0);
   lights();
   translate(width/2, height/2);
-  rotateX(frameCount*PI/1360);
-  rotateY(frameCount*PI/1160);
-  rotateZ(frameCount*PI/860);
+  rotateX(frameCount*PI/2360);
+  rotateY(frameCount*PI/2160);
+  rotateZ(frameCount*PI/1860);
 
   for (int i=0; i<faceCount; ++i) {
     p[i].display();

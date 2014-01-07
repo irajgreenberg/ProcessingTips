@@ -6,7 +6,22 @@ class Mat4 {
   }
 
   Mat4(PVector axisX, PVector axisY, PVector axisZ, PVector trans) {
-    mat[0] = axisX.x;
+//    mat[0] = axisX.x;
+//    mat[1] = axisX.y;
+//    mat[2] = axisX.z;
+//    mat[3] = trans.x;
+//
+//    mat[4] = axisY.x;
+//    mat[5] = axisY.y;
+//    mat[6] = axisY.z;
+//    mat[7] = trans.y;
+//
+//    mat[8] = axisZ.x;
+//    mat[9] = axisZ.y;
+//    mat[10] = axisZ.z;
+//    mat[11] = trans.z;
+   
+     mat[0] = axisX.x;
     mat[1] = axisY.x;
     mat[2] = axisZ.x;
     mat[3] = trans.x;
@@ -25,7 +40,6 @@ class Mat4 {
     mat[13] = 0;
     mat[14] = 0;
     mat[15] = 1;
-
   } 
 
   void mult(PVector[] arr) {
